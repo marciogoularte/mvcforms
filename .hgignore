@@ -1,4 +1,6 @@
 syntax: glob
 *.user
 *.suo
-
+*/bin/
+*/obj/
+TestResults/
