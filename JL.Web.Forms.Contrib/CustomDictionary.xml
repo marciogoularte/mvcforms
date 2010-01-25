@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dictionary>
+	<Words>
+		<Deprecated>
+			<!-- Words that should be flagged as obsolete. -->
+		</Deprecated>
+		<Recognized>
+			<!-- Words that should not cause a violation. -->
+			
+			<!-- A common shortening for Contributed -->
+			<Word>Contrib</Word>
+
+			<!-- Accronym for Content Delivery Network -->
+			<Word>Cdn</Word>
+
+			<!-- A list that can be sorted. -->
+			<Word>Sortable</Word>
+		</Recognized>
+		<Unrecognized>
+			<!-- Words that should cause a violation. -->
+		</Unrecognized>
+	</Words>
+	<Acronyms>
+		<CasingExceptions>
+			<!-- Exceptions to the acronym casing rules. Add a justification comment for each new string. -->
+		</CasingExceptions>
+	</Acronyms>
+</Dictionary>

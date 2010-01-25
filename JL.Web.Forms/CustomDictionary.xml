@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dictionary>
+	<Words>
+		<Deprecated>
+			<!-- Words that should be flagged as obsolete. -->
+		</Deprecated>
+		<Recognized>
+			<!-- Words that should not cause a violation. -->
+			
+			<!-- A valid shortening of Model View Controller -->
+			<Word>Mvc</Word>
+			
+			<!-- An object used to render an element. -->
+			<Word>Renderer</Word>
+
+			<!-- A HTML common Element. -->
+			<Word>Checkbox</Word>
+
+			<!-- A valid shortened version of Multiple -->
+			<Word>Multi</Word>
+
+			<!-- Proper english spelling! -->
+			<Word>Humanise</Word>
+
+			<!-- A valid shortened version of Utilities -->
+			<Word>Utils</Word>
+			
+			<!-- Short version of Pixel -->
+			<Word>px</Word>
+			
+			<!-- Json is valid -->
+			<Word>Json</Word>
+		</Recognized>
+		<Unrecognized>
+			<!-- Words that should cause a violation. -->
+		</Unrecognized>
+	</Words>
+	<Acronyms>
+		<CasingExceptions>
+			<!-- Exceptions to the acronym casing rules. Add a justification comment for each new string. -->
+		</CasingExceptions>
+	</Acronyms>
+</Dictionary>
