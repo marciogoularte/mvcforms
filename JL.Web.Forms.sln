@@ -18,24 +18,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JL.Web.Forms.Contrib", "JL.Web.Forms.Contrib\JL.Web.Forms.Contrib.csproj", "{7A92F36F-2FB5-4AB0-8C40-B7B6BCE6F079}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs03.codeplex.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = JL.Web.Forms\\JL.Web.Forms.csproj
-		SccProjectName1 = JL.Web.Forms
-		SccLocalPath1 = JL.Web.Forms
-		SccProjectUniqueName2 = JL.Web.Forms.Tests\\JL.Web.Forms.Tests.csproj
-		SccProjectName2 = JL.Web.Forms.Tests
-		SccLocalPath2 = JL.Web.Forms.Tests
-		SccProjectUniqueName3 = MvcExample\\MvcExample.csproj
-		SccProjectName3 = MvcExample
-		SccLocalPath3 = MvcExample
-		SccProjectUniqueName4 = JL.Web.Forms.Contrib\\JL.Web.Forms.Contrib.csproj
-		SccProjectName4 = JL.Web.Forms.Contrib
-		SccLocalPath4 = JL.Web.Forms.Contrib
-	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = JL.Web.Forms.vsmdi
 	EndGlobalSection
