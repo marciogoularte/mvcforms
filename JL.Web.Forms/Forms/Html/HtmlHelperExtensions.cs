@@ -42,7 +42,7 @@ using System.Globalization;
             {
                 response.Write(boundForm.StartFieldSet);
                 RenderMvcForm(self, boundForm.Form);
-                response.Write(boundForm.EndFieldSet);
+                response.Write(BoundForm.EndFieldSet);
             }
         }
 

@@ -83,7 +83,7 @@ namespace JL.Web.Forms
         /// <summary>
         /// End output of fieldset (used primarily by HtmlHelperExtensions.RenderMvcForm)
         /// </summary>
-        public string EndFieldSet
+        public static string EndFieldSet
         {
             get
             {

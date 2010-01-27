@@ -63,16 +63,6 @@ namespace JL.Web.Forms.Fields
         /// </summary>
         public const string MessageInvalidLink = "invalid_link";
 
-        /// <summary>
-        /// Settings key in AppSettings for user agent.
-        /// </summary>
-        public const string UserAgentSettingsKey = "Forms:UserAgent";
-
-        /// <summary>
-        /// Default user agent string
-        /// </summary>
-        public const string DefaultUserAgent = "ASP.NET MVC Forms (http://mvcforms.codeplex.com)";
-
         #endregion
 
         #region .ctors
@@ -93,7 +83,7 @@ namespace JL.Web.Forms.Fields
         public UrlField(IWidget widget)
             : base(UrlRE, widget)
         {
-            this.UserAgent = ConfigurationHelper.GetSetting(UserAgentSettingsKey, DefaultUserAgent);
+            this.UserAgent = Configuration.MvcForms.Fields.UrlField.UserAgent;
 
             this.ErrorMessages[MessageInvalid] = DefaultErrorMessages.InvalidUrl;
         }

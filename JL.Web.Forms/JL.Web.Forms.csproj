@@ -77,8 +77,13 @@
     <Compile Include="Forms\BoundForm.cs" />
     <Compile Include="Forms\ChoiceCollection.cs" />
     <Compile Include="Forms\BoundField.cs" />
+    <Compile Include="Forms\Configuration\FieldsSection.cs" />
+    <Compile Include="Forms\Configuration\FormsSection.cs" />
+    <Compile Include="Forms\Configuration\MediaElement.cs" />
+    <Compile Include="Forms\Configuration\UrlFieldElement.cs" />
     <Compile Include="Forms\Extensions\ObjectExtensions.cs" />
     <Compile Include="Forms\Fields\CollectionField.cs" />
+    <Compile Include="Forms\Configuration\MvcForms.cs" />
     <Compile Include="Forms\Html\HtmlHelperExtensions.cs" />
     <Compile Include="Forms\ICollectionWidget.cs" />
     <Compile Include="Forms\UsePartialViewAttribute.cs" />

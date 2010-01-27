@@ -101,7 +101,12 @@ namespace JL.Web.Forms
         /// <returns></returns>
         public override string ToString()
         {
-            return this.AsTable;
+            switch (Configuration.MvcForms.Forms.DefaultRenderLayout)
+            {
+                case Configuration.RenderLayout.UL: return this.AsUL;
+                case Configuration.RenderLayout.P: return this.AsP;
+                default: return this.AsTable;
+            }            
         }
 
         #endregion
