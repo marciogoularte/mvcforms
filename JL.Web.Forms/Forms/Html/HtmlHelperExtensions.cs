@@ -79,7 +79,7 @@ using System.Globalization;
                 }
 
                 // Render the form
-                self.RenderPartial(partialViewName, form);
+                self.RenderPartial(partialViewName, form, self.ViewData);
             }
         }
     }
