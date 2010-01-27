@@ -11,6 +11,7 @@
     /// <summary>
     /// Example form - Section 2
     /// </summary>
+    [UsePartialView]
     public class Section2Form : Form
     {
         #region .ctors

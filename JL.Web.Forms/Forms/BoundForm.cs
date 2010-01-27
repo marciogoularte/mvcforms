@@ -60,8 +60,35 @@ namespace JL.Web.Forms
         /// <returns>Complete output.</returns>
         private string RenderHtml(string format, string renderedForm)
         {
-            return string.Format(CultureInfo.CurrentUICulture, format,
+            return string.Format(CultureInfo.InvariantCulture, format,
                 string.Empty, this.Label, renderedForm);
+        }
+
+        #endregion
+
+        #region Render Properties
+
+        /// <summary>
+        /// Start output of fieldset (used primarily by HtmlHelperExtensions.RenderMvcForm)
+        /// </summary>
+        public string StartFieldSet
+        {
+            get
+            {
+                return string.Format(CultureInfo.InvariantCulture,
+                    "<fieldset{0}>\n<legend>{1}</legend>\n", string.Empty, this.Label);
+            }
+        }
+
+        /// <summary>
+        /// End output of fieldset (used primarily by HtmlHelperExtensions.RenderMvcForm)
+        /// </summary>
+        public string EndFieldSet
+        {
+            get
+            {
+                return "</fieldset>";
+            }
         }
 
         /// <summary>

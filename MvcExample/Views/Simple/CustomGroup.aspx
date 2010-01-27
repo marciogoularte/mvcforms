@@ -15,7 +15,7 @@
         <fieldset>
             <legend><%= Model["Section2"].Label %></legend>
             
-            <% Html.RenderPartial("Section2Form", Model["Section2"].Form); %>
+            <% Html.RenderPartial("Forms/Section2Form", Model["Section2"].Form); %>
         </fieldset>
         
         <fieldset>

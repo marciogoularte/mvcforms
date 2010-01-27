@@ -81,6 +81,7 @@
     <Compile Include="Forms\Fields\CollectionField.cs" />
     <Compile Include="Forms\Html\HtmlHelperExtensions.cs" />
     <Compile Include="Forms\ICollectionWidget.cs" />
+    <Compile Include="Forms\UsePartialViewAttribute.cs" />
     <Compile Include="Forms\Utils\ConfigurationHelper.cs" />
     <Compile Include="Forms\Utils\ReadOnlyDictionary.cs" />
     <Compile Include="Forms\Utils\ConversionHelper.cs" />

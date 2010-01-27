@@ -101,11 +101,12 @@
     <Content Include="Views\Contact\Simple.aspx" />
     <Content Include="Views\Contrib\Index.aspx" />
     <Content Include="Views\Contrib\jQueryUI.aspx" />
+    <Content Include="Views\Simple\Forms\Section2Form.ascx" />
+    <Content Include="Views\Simple\GroupDiscoverLayout.aspx" />
     <Content Include="Views\Simple\Index.aspx" />
     <Content Include="Views\Shared\ShowResults.aspx" />
     <Content Include="Views\Simple\Group.aspx" />
     <Content Include="Views\Simple\CustomGroup.aspx" />
-    <Content Include="Views\Simple\Section2Form.ascx" />
     <Content Include="Views\Wizard\Complete.aspx" />
     <Content Include="Views\Wizard\Wizard-1.aspx" />
     <Content Include="Views\Wizard\Wizard-0.aspx" />

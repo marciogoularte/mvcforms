@@ -71,5 +71,15 @@
         {
             return Group(data);
         }
+
+        /// <summary>
+        /// A form group with discovered layout
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public ActionResult GroupDiscoverLayout(FormCollection data)
+        {
+            return Group(data);
+        }
     }
 }

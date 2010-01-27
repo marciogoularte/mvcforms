@@ -11,5 +11,6 @@
         <li><%=Html.ActionLink("Basic form", "Form") %></li>
         <li><%=Html.ActionLink("Form Group", "Group") %></li>
         <li><%=Html.ActionLink("Form Group with customised layout", "CustomGroup")%></li>
+        <li><%=Html.ActionLink("Form Group with discovered layout", "GroupDiscoverLayout")%></li>
     </ul>
 </asp:Content>
