@@ -19,22 +19,12 @@
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public ActionResult Form(FormCollection data)
+        public ActionResult Form(Forms.Section1Form form)
         {
-            Forms.Section1Form form;
-            if (Request.RequestType == "POST")
+            if (form.IsValid)
             {
-                form = new Forms.Section1Form(data);
-                if (form.IsValid)
-                {
-                    return View("ShowResults", form.CleanedData);
-                }
+                return View("ShowResults", form.CleanedData);
             }
-            else
-            {
-                form = new Forms.Section1Form();
-            }
-            
             return View(form);
         }
 
@@ -43,22 +33,12 @@
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public ActionResult Group(FormCollection data)
+        public ActionResult Group(Forms.ExampleFormGroup formGroup)
         {
-            Forms.ExampleFormGroup formGroup;
-            if (Request.RequestType == "POST")
+            if (formGroup.IsValid)
             {
-                formGroup = new Forms.ExampleFormGroup(Request.Form, Request.Files);
-                if (formGroup.IsValid)
-                {
-                    return View("ShowResults", formGroup.CleanedData);
-                }
+                return View("ShowResults", formGroup.CleanedData);
             }
-            else
-            {
-                formGroup = new Forms.ExampleFormGroup();
-            }
-
             return View(formGroup);
         }
 
@@ -67,9 +47,9 @@
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public ActionResult CustomGroup(FormCollection data)
+        public ActionResult CustomGroup(Forms.ExampleFormGroup formGroup)
         {
-            return Group(data);
+            return Group(formGroup);
         }
 
         /// <summary>
@@ -77,9 +57,9 @@
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public ActionResult GroupDiscoverLayout(FormCollection data)
+        public ActionResult GroupDiscoverLayout(Forms.ExampleFormGroup formGroup)
         {
-            return Group(data);
+            return Group(formGroup);
         }
     }
 }

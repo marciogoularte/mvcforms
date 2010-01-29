@@ -15,33 +15,13 @@ namespace MvcExample.Controllers
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
-        public ActionResult jQueryUI(FormCollection data)
+        public ActionResult jQueryUI(Forms.Contrib.JQueryUIForm form)
         {
-            Forms.Contrib.JQueryUIForm form;
-            if (Request.RequestType == "POST")
+            if (form.IsValid)
             {
-                form = new Forms.Contrib.JQueryUIForm(data);
-                if (form.IsValid)
-                {
-                    return View("ShowResults", form.CleanedData);
-                }
+                return View("ShowResults", form.CleanedData);
             }
-            else
-            {
-                form = new Forms.Contrib.JQueryUIForm();
-            }
-            
             return View(form);        
-        }
-
-        /// <summary>
-        /// jQuery UI widgets example
-        /// </summary>
-        /// <param name="data"></param>
-        /// <returns></returns>
-        public ActionResult jQueryUI2(Forms.Contrib.JQueryUIForm form)
-        {
-            return View("jQueryUI", form);
         }
     }
 }
