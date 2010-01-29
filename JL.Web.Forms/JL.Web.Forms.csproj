@@ -84,6 +84,7 @@
     <Compile Include="Forms\Extensions\ObjectExtensions.cs" />
     <Compile Include="Forms\Fields\CollectionField.cs" />
     <Compile Include="Forms\Configuration\MvcForms.cs" />
+    <Compile Include="Forms\FormModelBinder.cs" />
     <Compile Include="Forms\Html\HtmlHelperExtensions.cs" />
     <Compile Include="Forms\ICollectionWidget.cs" />
     <Compile Include="Forms\UsePartialViewAttribute.cs" />
@@ -128,13 +129,13 @@
     <Compile Include="Forms\IFileWidget.cs" />
     <Compile Include="Forms\IForm.cs" />
     <Compile Include="Forms\Fields\ImageField.cs" />
+    <Compile Include="Forms\Utils\ThreadSafeDictionaryWrapper.cs" />
     <Compile Include="Forms\Widgets\BaseCollectionWidget.cs" />
     <Compile Include="Forms\Widgets\Choices\FilePathCollection.cs" />
     <Compile Include="Forms\Widgets\CssMediaTypes.cs" />
     <Compile Include="Forms\Widgets\FileInput.cs" />
     <Compile Include="Forms\NameObjectDictionary.cs" />
     <Compile Include="Forms\Form.cs" />
-    <Compile Include="Forms\ThreadSafeDictionaryWrapper.cs" />
     <Compile Include="Forms\Tuple.cs" />
     <Compile Include="Forms\Widgets\CheckBoxSelectMultiple.cs" />
     <Compile Include="Forms\Widgets\DateInput.cs" />

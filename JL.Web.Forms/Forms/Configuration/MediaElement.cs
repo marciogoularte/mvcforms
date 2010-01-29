@@ -38,7 +38,8 @@ namespace JL.Web.Forms.Configuration
     /// <summary>
     /// Media helper configuration
     /// </summary>
-    public class MediaElement
+    public class MediaElement : ConfigurationElement
     {
+
     }
 }

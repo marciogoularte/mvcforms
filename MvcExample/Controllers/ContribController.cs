@@ -33,5 +33,15 @@ namespace MvcExample.Controllers
             
             return View(form);        
         }
+
+        /// <summary>
+        /// jQuery UI widgets example
+        /// </summary>
+        /// <param name="data"></param>
+        /// <returns></returns>
+        public ActionResult jQueryUI2(Forms.Contrib.JQueryUIForm form)
+        {
+            return View("jQueryUI", form);
+        }
     }
 }

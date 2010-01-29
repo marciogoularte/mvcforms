@@ -24,9 +24,18 @@ namespace MvcExample
 
         }
 
+        public static void RegisterModelBinders(ModelBinderDictionary binders)
+        {
+            binders.DefaultBinder = new Binder.SmartModelBinder(new Binder.IFilteredModelBinder[] 
+            {
+                new Binder.FormFilteredModelBinder(),
+            });
+        }
+
         protected void Application_Start()
         {
             RegisterRoutes(RouteTable.Routes);
+            RegisterModelBinders(ModelBinders.Binders);
         }
     }
 }

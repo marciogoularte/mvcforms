@@ -30,7 +30,7 @@
  *****************************************************************************/
 #endregion
 
-namespace JL.Web.Forms
+namespace JL.Web.Forms.Utils
 {
     using System;
     using System.Collections.Generic;
