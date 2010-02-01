@@ -33,7 +33,6 @@
 namespace JL.Web.Forms.Utils
 {
     using System;
-    using System.Configuration;
     using System.Globalization;
     using System.Web;
 
@@ -64,22 +63,12 @@ namespace JL.Web.Forms.Utils
         /// <summary>
         /// Application/Request/Configuration key for JavaScript media path.
         /// </summary>
-        public const string JSMediaPathKey = "Forms:JavaScriptMediaPath";
-
-        /// <summary>
-        /// Default path for JavaScript media.
-        /// </summary>
-        public const string DefaultJSMediaPath = "~/Scripts/";
+        public const string MediaJSPathKey = "Forms:mediaJavaScriptPath";
 
         /// <summary>
         /// Application/Request/Configuration key for CSS media path.
         /// </summary>
-        public const string CssMediaPathKey = "Forms:CssMediaPath";
-
-        /// <summary>
-        /// Default path for CSS media.
-        /// </summary>
-        public const string DefaultCssMediaPath = "~/Content/";
+        public const string MediaCssPathKey = "Forms:mediaCssPath";
 
         private static string _jsMediaPath;
         private static string _cssMediaPath;
@@ -133,13 +122,13 @@ namespace JL.Web.Forms.Utils
             get
             {
                 // Allow override per request
-                string mediaPath = GetRequestItem(JSMediaPathKey);
+                string mediaPath = GetRequestItem(MediaJSPathKey);
                 if (mediaPath != null) return mediaPath;
                 
                 if (_jsMediaPath == null)
                 {
                     // Get path from config
-                    _jsMediaPath = ConfigurationHelper.GetSetting(JSMediaPathKey, DefaultJSMediaPath);
+                    _jsMediaPath = Configuration.MvcForms.Forms.Media.JavaScriptPath;
                 }
                 return _jsMediaPath;
             }
@@ -153,13 +142,13 @@ namespace JL.Web.Forms.Utils
             get
             {
                 // Allow override per request
-                string mediaPath = GetRequestItem(CssMediaPathKey);
+                string mediaPath = GetRequestItem(MediaCssPathKey);
                 if (mediaPath != null) return mediaPath;
                 
                 if (_cssMediaPath == null)
                 {
                     // Get path from config
-                    _cssMediaPath = ConfigurationHelper.GetSetting(CssMediaPathKey, DefaultCssMediaPath);
+                    _cssMediaPath = Configuration.MvcForms.Forms.Media.CssPath;
                 }
                 return _cssMediaPath;
             }

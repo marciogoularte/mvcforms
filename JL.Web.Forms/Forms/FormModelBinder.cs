@@ -93,7 +93,7 @@ namespace JL.Web.Forms
         {
             get 
             {
-                return Request.RequestType.Equals("POST", System.StringComparison.InvariantCultureIgnoreCase); 
+                return Request.RequestType.Equals("POST", System.StringComparison.OrdinalIgnoreCase); 
             }
         }
 

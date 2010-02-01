@@ -40,6 +40,22 @@ namespace JL.Web.Forms.Configuration
     /// </summary>
     public class MediaElement : ConfigurationElement
     {
+        /// <summary>
+        /// Default base path of JavaScript files
+        /// </summary>
+        [ConfigurationProperty("javaScriptPath", DefaultValue = "~/Scripts/")]
+        public string JavaScriptPath
+        {
+            get { return this["javaScriptPath"] as string; }
+        }
 
+        /// <summary>
+        /// Default base path of CSS files
+        /// </summary>
+        [ConfigurationProperty("cssPath", DefaultValue = "~/Content/")]
+        public string CssPath
+        {
+            get { return this["cssPath"] as string; }
+        }
     }
 }

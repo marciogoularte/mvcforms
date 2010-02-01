@@ -49,8 +49,7 @@ namespace JL.Web.Forms.Extensions
         /// <typeparam name="TValue">The type of the values in this dictionary.</typeparam>
         /// <param name="self"></param>
         /// <param name="source">Dictionary to append.</param>
-        public static void Append<TKey, TValue>(this IDictionary<TKey, TValue> self, 
-            IDictionary<TKey, TValue> source)
+        public static void Append<TKey, TValue>(this IDictionary<TKey, TValue> self, IDictionary<TKey, TValue> source) 
         {
             if (source == null) return;
             foreach (var pair in source)
@@ -86,8 +85,7 @@ namespace JL.Web.Forms.Extensions
         /// <typeparam name="TValue">The type of the values in this dictionary.</typeparam>
         /// <param name="self"></param>
         /// <param name="source">Dictionary to append.</param>
-        public static void Update<TKey, TValue>(this IDictionary<TKey, TValue> self,
-            IDictionary<TKey, TValue> source)
+        public static void Update<TKey, TValue>(this IDictionary<TKey, TValue> self, IDictionary<TKey, TValue> source) 
         {
             if (source == null) return;
             foreach (var pair in source)
@@ -104,8 +102,7 @@ namespace JL.Web.Forms.Extensions
         /// <param name="self"></param>
         /// <param name="key">Key to get value of.</param>
         /// <returns>Value associated with key; if key does not exist return default(TValue).</returns>
-        public static TValue Get<TKey, TValue>(this IDictionary<TKey, TValue> self,
-            TKey key)
+        public static TValue Get<TKey, TValue>(this IDictionary<TKey, TValue> self, TKey key)
         {
             return self.Get(key, default(TValue));
         }
@@ -119,8 +116,7 @@ namespace JL.Web.Forms.Extensions
         /// <param name="key">Key to get value of.</param>
         /// <param name="defaultValue">The default value.</param>
         /// <returns>Value associated with key; if key does not exist return default(TValue).</returns>
-        public static TValue Get<TKey, TValue>(this IDictionary<TKey, TValue> self,
-            TKey key, TValue defaultValue)
+        public static TValue Get<TKey, TValue>(this IDictionary<TKey, TValue> self, TKey key, TValue defaultValue)
         {
             TValue result;
             if (key != null && self.TryGetValue(key, out result))
@@ -142,8 +138,7 @@ namespace JL.Web.Forms.Extensions
         /// <param name="key">Key of value.</param>
         /// <param name="defaultValue">The default value.</param>
         /// <returns>Value associated with key; if key does not exist defaultValue.</returns>
-        public static TValue SetDefault<TKey, TValue>(this IDictionary<TKey, TValue> self, 
-            TKey key, TValue defaultValue)
+        public static TValue SetDefault<TKey, TValue>(this IDictionary<TKey, TValue> self, TKey key, TValue defaultValue)
         {
             TValue result;
             if (self.TryGetValue(key, out result))
