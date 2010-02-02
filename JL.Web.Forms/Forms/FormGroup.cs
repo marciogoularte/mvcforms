@@ -60,16 +60,16 @@ namespace JL.Web.Forms
         #region .ctors
 
         /// <summary>
-        /// Construct form object
+        /// Construct form group object.
         /// </summary>
         public FormGroup() : this(null, null) { }
         /// <summary>
-        /// Construct form object
+        /// Construct form group object.
         /// </summary>
         /// <param name="data">Data to bind form to</param>
         public FormGroup(NameValueCollection data) : this(data, null) { }
         /// <summary>
-        /// Construct form object
+        /// Construct form group object.
         /// </summary>
         /// <param name="data">Data to bind form to</param>
         /// <param name="files">File data to bind form to</param>

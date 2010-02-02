@@ -3,4 +3,5 @@ syntax: glob
 *.suo
 */bin/
 */obj/
+Build/
 TestResults/

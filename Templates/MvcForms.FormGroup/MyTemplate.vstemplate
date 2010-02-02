@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+	<TemplateData>
+		<Name>MVC Forms - Form Group</Name>
+		<Description>Simple template for a MVC forms form group</Description>
+		<Icon>MvcForms.ico</Icon>
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>10</SortOrder>
+		<NumberOfParentCategoriesToRollUp>2</NumberOfParentCategoriesToRollUp>
+		<RequiredFrameworkVersion>3.5</RequiredFrameworkVersion>
+		<TemplateGroupID>MVC</TemplateGroupID>
+		<DefaultName>FormGroup.cs</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<References>
+			<Reference>
+				<Assembly>JL.Web.Forms</Assembly>
+			</Reference>
+		</References>
+		
+		<ProjectItem ReplaceParameters="true">FormGroup.cs</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
