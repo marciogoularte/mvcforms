@@ -2,7 +2,7 @@ namespace $rootnamespace$
 {
     using System.Collections.Specialized;
 
-    using JL.Web.Forms;
+    using MvcForms;
     
     
     public class $safeitemrootname$ : FormGroup

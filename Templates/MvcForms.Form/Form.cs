@@ -2,9 +2,9 @@ namespace $rootnamespace$
 {
     using System.Collections.Specialized;
 
-    using JL.Web.Forms;
-    using Fields = JL.Web.Forms.Fields;
-    using Widgets = JL.Web.Forms.Widgets;
+    using MvcForms;
+    using Fields = MvcForms.Fields;
+    using Widgets = MvcForms.Widgets;
     
     
     public class $safeitemrootname$ : Form
