@@ -1,10 +1,11 @@
 namespace MvcExample.Controllers
 {
     using System.Web.Mvc;
-    using JL.Web.Forms;
+    using MvcForms;
 
-    public class AjaxController : JL.Web.Forms.AjaxController
+    public class AjaxController : MvcForms.AjaxController
     {
+        [OutputCache(Duration = 30, VaryByParam = "")]
         public ActionResult Index()
         {
             return View();

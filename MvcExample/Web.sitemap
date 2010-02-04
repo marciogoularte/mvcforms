@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="~/" title="Simple" description="Simple Examples">
+		<siteMapNode url="~/Simple" title="Simple" description="Simple Examples">
+			<siteMapNode url="~/Simple/Form" title="Basic form" description="A Simple form" />
+			<siteMapNode url="~/Simple/Group" title="Form Group" description="Form Group" />
+			<siteMapNode url="~/Simple/CustomGroup" title="Form Group with customised layout" description="Form Group with customised layout" />
+			<siteMapNode url="~/Simple/GroupDiscoverLayout" title="Form Group with discovered layout" description="Form Group with discovered layout" />
+		</siteMapNode>
+		
+		<siteMapNode url="~/Wizard" title="Wizard" description="Wizard landing page." />
+
+		<siteMapNode url="~/Ajax" title="Ajax" description="AJAX Validation Examples.">
+		</siteMapNode>
+
+		<siteMapNode url="~/Contrib" title="Contrib" description="Examples from contrib project.">
+			<siteMapNode url="~/Contrib/jQueryUI" title="jQueryUI" description="jQuery UI examples." />
+		</siteMapNode>
+
+		<siteMapNode url="~/Contact" title="Contact Example" description="Examples from documentation.">
+			<siteMapNode url="~/Contact/Simple" title="Simple template" description="Simple template example." />
+			<siteMapNode url="~/Contact/CustomLayout" title="Custom layout template" description="Custom layout template example." />
+			<siteMapNode url="~/Contact/CustomErrorLayout" title="Custom error layout template" description="Custom error layout template example." />
+			<siteMapNode url="~/Contact/LoopFields" title="Looping over fields template" description="Looping over fields template example." />
+			<siteMapNode url="~/Contact/Reusable" title="Reusable snippet template" description="Reusable snippet template example." />
+		</siteMapNode>
+	</siteMapNode>
+</siteMap>

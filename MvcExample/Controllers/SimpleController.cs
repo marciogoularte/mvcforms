@@ -3,12 +3,13 @@
     using System.Web.Mvc;
     using System.Net.Mail;
 
-    using JL.Web.Forms;
+    using MvcForms;
 
 
     [HandleError]
     public class SimpleController : Controller
     {
+        [OutputCache(Duration=30, VaryByParam="")]
         public ActionResult Index()
         {
             return View();

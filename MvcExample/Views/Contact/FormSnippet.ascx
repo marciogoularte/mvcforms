@@ -1,4 +1,4 @@
-<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<JL.Web.Forms.Form>" %>
+<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<MvcForms.Form>" %>
 
 <% foreach (var field in Model) { %>
     <div class="fieldWrapper">

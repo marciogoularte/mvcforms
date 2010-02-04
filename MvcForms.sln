@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2A3BCA31-74BE-485A-B49B-D9AB1738D778}"
+	ProjectSection(SolutionItems) = preProject
+		GlobalAssemblyInfo.cs = GlobalAssemblyInfo.cs
+		JL.Web.Forms.ndoc = JL.Web.Forms.ndoc
+		JL.Web.Forms.vsmdi = JL.Web.Forms.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+		MvcForms.vsmdi = MvcForms.vsmdi
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcForms", "MvcForms\MvcForms.csproj", "{1469F8CD-07AC-4F43-A318-3058CD1AC259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcForms.Contrib", "MvcForms.Contrib\MvcForms.Contrib.csproj", "{7A92F36F-2FB5-4AB0-8C40-B7B6BCE6F079}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcExample", "MvcExample\MvcExample.csproj", "{7D1926EF-639B-4A75-8014-CCDFDC385AC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcForms.Contrib.Tests", "MvcForms.Contrib.Tests\MvcForms.Contrib.Tests.csproj", "{40336EF3-6E32-4060-B50D-B09B05793E27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcForms.Tests", "MvcForms.Tests\MvcForms.Tests.csproj", "{45F89AB1-8D9D-463F-A165-5AA3A4FB5676}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = MvcForms.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1469F8CD-07AC-4F43-A318-3058CD1AC259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1469F8CD-07AC-4F43-A318-3058CD1AC259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1469F8CD-07AC-4F43-A318-3058CD1AC259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1469F8CD-07AC-4F43-A318-3058CD1AC259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A92F36F-2FB5-4AB0-8C40-B7B6BCE6F079}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A92F36F-2FB5-4AB0-8C40-B7B6BCE6F079}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A92F36F-2FB5-4AB0-8C40-B7B6BCE6F079}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A92F36F-2FB5-4AB0-8C40-B7B6BCE6F079}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D1926EF-639B-4A75-8014-CCDFDC385AC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1926EF-639B-4A75-8014-CCDFDC385AC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1926EF-639B-4A75-8014-CCDFDC385AC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1926EF-639B-4A75-8014-CCDFDC385AC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40336EF3-6E32-4060-B50D-B09B05793E27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40336EF3-6E32-4060-B50D-B09B05793E27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40336EF3-6E32-4060-B50D-B09B05793E27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40336EF3-6E32-4060-B50D-B09B05793E27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45F89AB1-8D9D-463F-A165-5AA3A4FB5676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45F89AB1-8D9D-463F-A165-5AA3A4FB5676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45F89AB1-8D9D-463F-A165-5AA3A4FB5676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45F89AB1-8D9D-463F-A165-5AA3A4FB5676}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

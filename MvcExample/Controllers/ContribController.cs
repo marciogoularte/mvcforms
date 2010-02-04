@@ -5,6 +5,7 @@ namespace MvcExample.Controllers
 
     public class ContribController : Controller
     {
+        [OutputCache(Duration = 30, VaryByParam = "")]
         public ActionResult Index()
         {
             return View();

@@ -23,15 +23,15 @@
             </div> 
             
             <div id="menucontainer">
-            
-                <ul id="menu">              
-                    <li><%= Html.ActionLink("Simple", "Index", "Simple")%></li>
-                    <li><%= Html.ActionLink("Wizard", "Index", "Wizard")%></li>
-                    <li><%= Html.ActionLink("Ajax", "Index", "Ajax")%></li>
-                    <li><%= Html.ActionLink("Contrib", "Index", "Contrib")%></li>
-                    <li><%= Html.ActionLink("Contact Example", "Index", "Contact")%></li>
-                </ul>
-            
+                <ul id="menu">
+                <% foreach (SiteMapNode node in SiteMap.RootNode.ChildNodes)
+                   {
+                     %>
+                    <li<%= SiteMap.CurrentNode == node ? " class=\"selected\"" : "" %>>
+                        <a href="<%= node.Url %>"><%= node.Title %></a>
+                    </li>
+                <%} %>
+                </ul>            
             </div>
         </div>
 

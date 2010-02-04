@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1469F8CD-07AC-4F43-A318-3058CD1AC259}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MvcForms</RootNamespace>
+    <AssemblyName>MvcForms</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>MvcForms.snk</AssemblyOriginatorKeyFile>
+    <TargetFrameworkSubset>
+    </TargetFrameworkSubset>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\MvcForms.xml</DocumentationFile>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningsAsErrors>
+    </WarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Routing">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Forms\AjaxController.cs" />
+    <Compile Include="Forms\BaseForm.cs" />
+    <Compile Include="Forms\BindException.cs" />
+    <Compile Include="Forms\BoundForm.cs" />
+    <Compile Include="Forms\ChoiceCollection.cs" />
+    <Compile Include="Forms\BoundField.cs" />
+    <Compile Include="Forms\Configuration\FieldsSection.cs" />
+    <Compile Include="Forms\Configuration\FormsSection.cs" />
+    <Compile Include="Forms\Configuration\MediaElement.cs" />
+    <Compile Include="Forms\Configuration\UrlFieldElement.cs" />
+    <Compile Include="Forms\Extensions\ObjectExtensions.cs" />
+    <Compile Include="Forms\Fields\CollectionField.cs" />
+    <Compile Include="Forms\Configuration\MvcForms.cs" />
+    <Compile Include="Forms\FormModelBinder.cs" />
+    <Compile Include="Forms\Html\HtmlHelperExtensions.cs" />
+    <Compile Include="Forms\ICollectionWidget.cs" />
+    <Compile Include="Forms\UsePartialViewAttribute.cs" />
+    <Compile Include="Forms\Utils\ConfigurationHelper.cs" />
+    <Compile Include="Forms\Utils\ReadOnlyDictionary.cs" />
+    <Compile Include="Forms\Utils\ConversionHelper.cs" />
+    <Compile Include="Forms\ElementAttributesDictionary.cs" />
+    <Compile Include="Forms\ErrorDictionary.cs" />
+    <Compile Include="Forms\ErrorCollection.cs" />
+    <Compile Include="Forms\Extensions\DictionaryExtensions.cs" />
+    <Compile Include="Forms\FieldCache.cs" />
+    <Compile Include="Forms\Fields\BaseField.cs" />
+    <Compile Include="Forms\Fields\BooleanField.cs" />
+    <Compile Include="Forms\Fields\ChoiceField.cs" />
+    <Compile Include="Forms\Fields\DateField.cs" />
+    <Compile Include="Forms\Fields\DateTimeField.cs" />
+    <Compile Include="Forms\Fields\EmailField.cs" />
+    <Compile Include="Forms\Fields\FileField.cs" />
+    <Compile Include="Forms\Fields\FilePathField.cs" />
+    <Compile Include="Forms\Fields\FloatField.cs" />
+    <Compile Include="Forms\Fields\IntegerField.cs" />
+    <Compile Include="Forms\Fields\IpAddressField.cs" />
+    <Compile Include="Forms\Fields\MultipleChoiceField.cs" />
+    <Compile Include="Forms\Fields\NullBooleanField.cs" />
+    <Compile Include="Forms\Fields\RegexField.cs" />
+    <Compile Include="Forms\Fields\SlugField.cs" />
+    <Compile Include="Forms\Fields\StringField.cs" />
+    <Compile Include="Forms\Fields\DefaultErrorMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DefaultErrorMessages.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Fields\TimeField.cs" />
+    <Compile Include="Forms\Fields\UrlField.cs" />
+    <Compile Include="Forms\Utils\FormatHelper.cs" />
+    <Compile Include="Forms\Choice.cs" />
+    <Compile Include="Forms\FormGroup.cs" />
+    <Compile Include="Forms\IChoice.cs" />
+    <Compile Include="Forms\IChoiceField.cs" />
+    <Compile Include="Forms\IChoiceWidget.cs" />
+    <Compile Include="Forms\IFileField.cs" />
+    <Compile Include="Forms\IFileWidget.cs" />
+    <Compile Include="Forms\IForm.cs" />
+    <Compile Include="Forms\Fields\ImageField.cs" />
+    <Compile Include="Forms\Utils\ThreadSafeDictionaryWrapper.cs" />
+    <Compile Include="Forms\Widgets\BaseCollectionWidget.cs" />
+    <Compile Include="Forms\Widgets\Choices\FilePathCollection.cs" />
+    <Compile Include="Forms\Widgets\CssMediaTypes.cs" />
+    <Compile Include="Forms\Widgets\FileInput.cs" />
+    <Compile Include="Forms\NameObjectDictionary.cs" />
+    <Compile Include="Forms\Form.cs" />
+    <Compile Include="Forms\Tuple.cs" />
+    <Compile Include="Forms\Widgets\CheckBoxSelectMultiple.cs" />
+    <Compile Include="Forms\Widgets\DateInput.cs" />
+    <Compile Include="Forms\Widgets\DateTimeInput.cs" />
+    <Compile Include="Forms\Widgets\Keygen.cs" />
+    <Compile Include="Forms\Widgets\BaseMultiWidget.cs" />
+    <Compile Include="Forms\Widgets\Media.cs" />
+    <Compile Include="Forms\Utils\MediaHelper.cs" />
+    <Compile Include="Forms\Widgets\NullBooleanSelect.cs" />
+    <Compile Include="Forms\Widgets\RadioInput.cs" />
+    <Compile Include="Forms\Widgets\RadioSelect.cs" />
+    <Compile Include="Forms\Widgets\Select.cs" />
+    <Compile Include="Forms\Widgets\SelectMultiple.cs" />
+    <Compile Include="Forms\Widgets\Choices\AustralianStates.cs" />
+    <Compile Include="Forms\Widgets\ChoiceHelper.cs" />
+    <Compile Include="Forms\Widgets\Choices\DateAndTime.cs" />
+    <Compile Include="Forms\Widgets\SplitDateTime.cs" />
+    <Compile Include="Forms\Widgets\TextArea.cs" />
+    <Compile Include="Forms\Widgets\TimeInput.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
+    <Compile Include="Forms\IField.cs" />
+    <Compile Include="Forms\IWidget.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\ValidationException.cs" />
+    <Compile Include="Forms\Widgets\BaseWidget.cs" />
+    <Compile Include="Forms\Widgets\CheckBoxInput.cs" />
+    <Compile Include="Forms\Widgets\HiddenInput.cs" />
+    <Compile Include="Forms\Widgets\Input.cs" />
+    <Compile Include="Forms\Widgets\PasswordInput.cs" />
+    <Compile Include="Forms\Widgets\TextInput.cs" />
+    <Compile Include="Forms\Utils\HumaniseHelper.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\Fields\DefaultErrorMessages.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>DefaultErrorMessages.Designer.cs</LastGenOutput>
+      <CustomToolNamespace>MvcForms.Fields</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Forms.cd" />
+    <None Include="MvcForms.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDictionary Include="CustomDictionary.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

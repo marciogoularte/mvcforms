@@ -1,4 +1,4 @@
-<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<JL.Web.Forms.Form>" %>
+<%@ Page Language="C#" Inherits="System.Web.Mvc.ViewPage<MvcForms.Form>" %>
 <html>
 <body>
 

@@ -1,20 +1,19 @@
 namespace MvcExample.Controllers
 {
     using System.Web.Mvc;
-
+    
 
     /// <summary>
     /// Example source code from documentation
     /// </summary>
     /// <see cref="http://mvcforms.codeplex.com/wikipage?title=Working%20with%20forms"/>
-    public class ContactController : JL.Web.Forms.AjaxController
+    public class ContactController : MvcForms.AjaxController
     {
-
+        [OutputCache(Duration = 30, VaryByParam = "")]
         public ActionResult Index()
         {
             return View();
         }
-
 
         /// <summary>
         /// Simple view action method

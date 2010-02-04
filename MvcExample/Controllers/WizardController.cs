@@ -1,13 +1,13 @@
 using System;
 using System.Web.Mvc;
 
-using JL.Web.Forms;
+using MvcForms;
 
 
 namespace MvcExample.Controllers
 {
     [HandleError]
-    public class WizardController : JL.Web.Forms.Contrib.WizardController
+    public class WizardController : MvcForms.Contrib.WizardController
     {
         public IForm section1 = new Forms.Section1Form {
             Label = "Section 1",
@@ -19,11 +19,13 @@ namespace MvcExample.Controllers
 
         #region Views
 
+        [OutputCache(Duration = 30, VaryByParam = "")]
         public ActionResult Index()
         {
             return View();
         }
 
+        [OutputCache(Duration = 30, VaryByParam = "")]
         public ActionResult Complete()
         {
             return View();

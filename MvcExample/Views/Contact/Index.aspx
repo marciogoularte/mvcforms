@@ -12,12 +12,12 @@
     <div>
         <h1>Documentation Examples</h1>
         
-        <p>View overview at <a href="http://mvcforms.codeplex.com/wikipage?title=Working with forms">Codeplex</a>.</p>
+        <p>Examples from <a href="http://code.google.com/p/mvcforms/wiki/GettingStartedGuide">Getting Started Guide</a>.</p>
         
         <dl>
             <dt><%=Html.ActionLink("Simple template", "Simple") %></dt>
             <dd>
-                <pre><span style="background-color: Yellow;">&lt;%</span><span style="color: Blue;">@</span> <span style="color: rgb(163, 21, 21);">Page</span> <span style="color: Red;">Title</span><span style="color: Blue;">=</span><span style="color: Blue;">""</span> <span style="color: Red;">Language</span><span style="color: Blue;">=</span><span style="color: Blue;">"C#"</span> <span style="color: Red;">Inherits</span><span style="color: Blue;">=</span><span style="color: Blue;">"System.Web.Mvc.ViewPage&lt;JL.Web.Forms.BaseForm&gt;"</span> <span style="background-color: Yellow;">%&gt;</span>
+                <pre><span style="background-color: Yellow;">&lt;%</span><span style="color: Blue;">@</span> <span style="color: rgb(163, 21, 21);">Page</span> <span style="color: Red;">Title</span><span style="color: Blue;">=</span><span style="color: Blue;">""</span> <span style="color: Red;">Language</span><span style="color: Blue;">=</span><span style="color: Blue;">"C#"</span> <span style="color: Red;">Inherits</span><span style="color: Blue;">=</span><span style="color: Blue;">"System.Web.Mvc.ViewPage&lt;MvcForms.BaseForm&gt;"</span> <span style="background-color: Yellow;">%&gt;</span>
 
 <span style="color: Blue;">&lt;</span><span style="color: rgb(163, 21, 21);">form</span> <span style="color: Red;">action</span><span style="color: Blue;">=</span><span style="color: Blue;">"" method="post"</span><span style="color: Blue;">&gt;</span>
     <span style="background-color: Yellow;">&lt;%=</span>Model.AsP <span style="background-color: Yellow;">%&gt;</span>
@@ -28,7 +28,7 @@
             
             <dt><%=Html.ActionLink("Custom layout template", "CustomLayout") %></dt>
             <dd>
-                <pre><span style="background-color: Yellow;">&lt;%</span><span style="color: Blue;">@</span> <span style="color: rgb(163, 21, 21);">Page</span> <span style="color: Red;">Title</span><span style="color: Blue;">=</span><span style="color: Blue;">""</span> <span style="color: Red;">Language</span><span style="color: Blue;">=</span><span style="color: Blue;">"C#"</span> <span style="color: Red;">Inherits</span><span style="color: Blue;">=</span><span style="color: Blue;">"System.Web.Mvc.ViewPage&lt;JL.Web.Forms.Form&gt;"</span> <span style="background-color: Yellow;">%&gt;</span>
+                <pre><span style="background-color: Yellow;">&lt;%</span><span style="color: Blue;">@</span> <span style="color: rgb(163, 21, 21);">Page</span> <span style="color: Red;">Title</span><span style="color: Blue;">=</span><span style="color: Blue;">""</span> <span style="color: Red;">Language</span><span style="color: Blue;">=</span><span style="color: Blue;">"C#"</span> <span style="color: Red;">Inherits</span><span style="color: Blue;">=</span><span style="color: Blue;">"System.Web.Mvc.ViewPage&lt;MvcForms.Form&gt;"</span> <span style="background-color: Yellow;">%&gt;</span>
 
 <span style="color: Blue;">&lt;</span><span style="color: rgb(163, 21, 21);">form</span> <span style="color: Red;">action</span><span style="color: Blue;">=</span><span style="color: Blue;">"" method="post"</span><span style="color: Blue;">&gt;</span>
     <span style="color: Blue;">&lt;</span><span style="color: rgb(163, 21, 21);">div</span> <span style="color: Red;">class</span><span style="color: Blue;">=</span><span style="color: Blue;">"fieldWrapper"</span><span style="color: Blue;">&gt;</span>

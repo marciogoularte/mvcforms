@@ -2,10 +2,10 @@
 {
     using System.Collections.Specialized;
 
-    using JL.Web.Forms;
-    using Fields = JL.Web.Forms.Fields;
-    using Widgets = JL.Web.Forms.Widgets;
-    using ContribWidgets = JL.Web.Forms.Contrib.Widgets;
+    using MvcForms;
+    using Fields = MvcForms.Fields;
+    using Widgets = MvcForms.Widgets;
+    using ContribWidgets = MvcForms.Contrib.Widgets;
 
 
     /// <summary>
