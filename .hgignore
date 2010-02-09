@@ -5,3 +5,4 @@ syntax: glob
 */obj/
 Build/
 TestResults/
+doc/

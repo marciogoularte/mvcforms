@@ -14,7 +14,7 @@
 	<TemplateContent>
 		<References>
 			<Reference>
-				<Assembly>JL.Web.Forms</Assembly>
+				<Assembly>MvcForms</Assembly>
 			</Reference>
 		</References>
 		
