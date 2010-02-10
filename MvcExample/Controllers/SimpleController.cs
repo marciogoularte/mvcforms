@@ -34,6 +34,7 @@
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
+        [ValidateInput(false)]
         public ActionResult Group(Forms.ExampleFormGroup formGroup)
         {
             if (formGroup.IsValid)

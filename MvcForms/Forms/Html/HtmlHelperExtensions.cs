@@ -16,10 +16,25 @@ using System.Globalization;
         /// Begin an MVC Forms form.
         /// </summary>
         /// <param name="self">HTML Helper.</param>
+        /// <returns></returns>
+        public static MvcForm BeginMvcForm(this HtmlHelper self)
+        {
+            return BeginMvcForm(self, self.ViewData.Model as IForm);
+        }
+
+        /// <summary>
+        /// Begin an MVC Forms form.
+        /// </summary>
+        /// <param name="self">HTML Helper.</param>
         /// <param name="form">MVC Forms form instance</param>
         /// <returns></returns>
         public static MvcForm BeginMvcForm(this HtmlHelper self, IForm form)
         {
+            if (form == null)
+            {
+                throw new ArgumentNullException("form", "The form argument cannot be null.");
+            }
+
             object htmlAttributes = null;
             if (form.IsMultipart)
             {
@@ -32,9 +47,30 @@ using System.Globalization;
         /// Render a form (and discover any defined partial views).
         /// </summary>
         /// <param name="self">HTML Helper.</param>
+        public static void RenderMvcForm(this HtmlHelper self)
+        {
+            var formGroup = self.ViewData.Model as FormGroup;
+            if (formGroup != null)
+            {
+                RenderMvcForm(self, formGroup);
+            }
+            else
+            {
+                RenderMvcForm(self, self.ViewData.Model as Form);
+            }
+        }
+
+        /// <summary>
+        /// Render a form (and discover any defined partial views).
+        /// </summary>
+        /// <param name="self">HTML Helper.</param>
         /// <param name="formGroup">Form group to render.</param>
         public static void RenderMvcForm(this HtmlHelper self, FormGroup formGroup)
         {
+            if (formGroup == null)
+            {
+                throw new ArgumentNullException("formGroup", "The formGroup argument cannot be null.");
+            }
             var response = self.ViewContext.HttpContext.Response;
 
             // Render form group
@@ -53,6 +89,10 @@ using System.Globalization;
         /// <param name="form">Form to render.</param>
         public static void RenderMvcForm(this HtmlHelper self, Form form)
         {
+            if (form == null)
+            {
+                throw new ArgumentNullException("form", "The form argument cannot be null.");
+            }
             var response = self.ViewContext.HttpContext.Response;
 
             // Check for partitial view attribute

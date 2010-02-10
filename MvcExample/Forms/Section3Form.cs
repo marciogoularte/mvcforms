@@ -32,6 +32,10 @@
             MinLength = 20,
         };
 
+        public static IField SomeHtml = new Fields.HtmlStringField
+        {
+        };
+
         #endregion
     }
 }
