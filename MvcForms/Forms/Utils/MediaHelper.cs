@@ -128,7 +128,7 @@ namespace MvcForms.Utils
                 if (_jsMediaPath == null)
                 {
                     // Get path from config
-                    _jsMediaPath = Configuration.MvcForms.Instance.Forms.Media.JavaScriptPath;
+                    _jsMediaPath = Configuration.MvcFormsSettings.Instance.Forms.Media.JavaScriptPath;
                 }
                 return _jsMediaPath;
             }
@@ -148,7 +148,7 @@ namespace MvcForms.Utils
                 if (_cssMediaPath == null)
                 {
                     // Get path from config
-                    _cssMediaPath = Configuration.MvcForms.Instance.Forms.Media.CssPath;
+                    _cssMediaPath = Configuration.MvcFormsSettings.Instance.Forms.Media.CssPath;
                 }
                 return _cssMediaPath;
             }

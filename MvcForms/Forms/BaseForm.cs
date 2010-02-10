@@ -63,7 +63,7 @@ namespace MvcForms
         /// </summary>
         /// <param name="initial">Initial data to be displayed by form.</param>
         protected BaseForm(Dictionary<string, object> initial)
-            : this(null, null, initial, Configuration.MvcForms.Instance) { }
+            : this(null, null, initial, Configuration.MvcFormsSettings.Instance) { }
 
         /// <summary>
         /// Constructor
@@ -71,7 +71,7 @@ namespace MvcForms
         /// <param name="data">Data to bind form to</param>
         /// <param name="files">File data to bind form to</param>
         protected BaseForm(NameValueCollection data, HttpFileCollectionBase files)
-            : this(data, files, null, Configuration.MvcForms.Instance) {}
+            : this(data, files, null, Configuration.MvcFormsSettings.Instance) {}
 
         /// <summary>
         /// Constructor
@@ -80,7 +80,7 @@ namespace MvcForms
         /// <param name="files">File data to bind form to.</param>
         /// <param name="initial">Initial data to be displayed by form.</param>
         protected BaseForm(NameValueCollection data, HttpFileCollectionBase files, Dictionary<string, object> initial)
-            : this(data, files, initial, Configuration.MvcForms.Instance) {}
+            : this(data, files, initial, Configuration.MvcFormsSettings.Instance) {}
 
         /// <summary>
         /// Constructor
@@ -90,7 +90,7 @@ namespace MvcForms
         /// <param name="initial">Initial data to be displayed by form.</param>
         /// <param name="config">Configuration to use (for testability).</param>
         protected BaseForm(NameValueCollection data, HttpFileCollectionBase files, 
-            Dictionary<string, object> initial, Configuration.MvcForms config)
+            Dictionary<string, object> initial, Configuration.MvcFormsSettings config)
         {
             this.Data = data;
             this.Files = files; 
@@ -339,7 +339,7 @@ namespace MvcForms
         /// <summary>
         /// Configuration
         /// </summary>
-        protected Configuration.MvcForms Config { get; set; }
+        protected Configuration.MvcFormsSettings Config { get; set; }
 
         #endregion
     }

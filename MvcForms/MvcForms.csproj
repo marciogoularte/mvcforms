@@ -64,7 +64,7 @@
     <Reference Include="System.Web.Extensions">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Web.Mvc, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System.Web.Routing">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -89,13 +89,12 @@
     <Compile Include="Forms\Configuration\UrlFieldElement.cs" />
     <Compile Include="Forms\Extensions\ObjectExtensions.cs" />
     <Compile Include="Forms\Fields\CollectionField.cs" />
-    <Compile Include="Forms\Configuration\MvcForms.cs" />
+    <Compile Include="Forms\Configuration\MvcFormsSettings.cs" />
     <Compile Include="Forms\Fields\HtmlStringField.cs" />
     <Compile Include="Forms\FormModelBinder.cs" />
     <Compile Include="Forms\Html\HtmlHelperExtensions.cs" />
     <Compile Include="Forms\ICollectionWidget.cs" />
     <Compile Include="Forms\UsePartialViewAttribute.cs" />
-    <Compile Include="Forms\UseResourcesAttribute.cs" />
     <Compile Include="Forms\Utils\ConfigurationHelper.cs" />
     <Compile Include="Forms\Utils\ReadOnlyDictionary.cs" />
     <Compile Include="Forms\Utils\ConversionHelper.cs" />

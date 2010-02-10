@@ -80,14 +80,14 @@ namespace MvcForms.Fields
         /// Widget override constructor
         /// </summary>
         /// <param name="widget">Widget to override default</param>
-        public UrlField(IWidget widget) : this(widget, Configuration.MvcForms.Instance) { }
+        public UrlField(IWidget widget) : this(widget, Configuration.MvcFormsSettings.Instance) { }
 
         /// <summary>
         /// Widget override constructor
         /// </summary>
         /// <param name="widget">Widget to override default</param>
         /// <param name="config">Configuration object to use (for testability).</param>
-        public UrlField(IWidget widget, Configuration.MvcForms config)
+        public UrlField(IWidget widget, Configuration.MvcFormsSettings config)
             : base(UrlRE, widget)
         {
             this.UserAgent = config.Fields.UrlField.UserAgent;

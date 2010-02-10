@@ -38,12 +38,12 @@ namespace MvcForms.Configuration
     /// <summary>
     /// Configuration settings group for MVC forms
     /// </summary>
-    public sealed class MvcForms
+    public sealed class MvcFormsSettings
     {
         #region Fields
 
         private const string SECTION_NAME = "mvcforms";
-        private static MvcForms _instance;
+        private static MvcFormsSettings _instance;
 
         #endregion
 
@@ -52,18 +52,18 @@ namespace MvcForms.Configuration
         /// <summary>
         /// Private contructor
         /// </summary>
-        private MvcForms() { }
+        private MvcFormsSettings() { }
 
         /// <summary>
         /// Get instance of MVC forms
         /// </summary>
-        public static MvcForms Instance
+        public static MvcFormsSettings Instance
         {
             get 
             { 
                 if (_instance == null)
                 {
-                    _instance = new MvcForms();
+                    _instance = new MvcFormsSettings();
                 }
                 return _instance;
             }
@@ -77,6 +77,8 @@ namespace MvcForms.Configuration
         /// Get MVC form configuration section.
         /// </summary>
         /// <returns></returns>
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic",
+            Justification = "Is required to be an instance member")]
         public FormsSection Forms
         {
             get 
@@ -89,6 +91,8 @@ namespace MvcForms.Configuration
         /// Get MVC form configuration section.
         /// </summary>
         /// <returns></returns>
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Performance", "CA1822:MarkMembersAsStatic",
+            Justification="Is required to be an instance member")]
         public FieldsSection Fields
         {
             get 
