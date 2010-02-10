@@ -41,7 +41,7 @@ namespace MvcForms.Contrib.Widgets.JQueryUI
     /// <summary>
     /// Datepicker for Date input using jQuery UI Datepicker widget
     /// </summary>
-    /// <see cref="http://jqueryui.com/demos/datepicker/"/>
+    /// <seealso ref="http://jqueryui.com/demos/datepicker/"/>
     /// <remarks>Visit the jQuery UI documentation site for complete documentation of options.</remarks>
     public class DatePicker : DateInput
     {

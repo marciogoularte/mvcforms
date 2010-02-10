@@ -47,14 +47,20 @@ namespace MvcForms.Contrib.Widgets.JQueryUI
         /// Let widget automatically determine orientation
         /// </summary>
         Auto,
+        /// <summary>
+        /// Display horizontally.
+        /// </summary>
         Horizontal,
+        /// <summary>
+        /// Display vertically.
+        /// </summary>
         Vertical,
     }
 
     /// <summary>
     /// Slider control using jQuery UI Slider widget
     /// </summary>
-    /// <see cref="http://jqueryui.com/demos/slider/"/>
+    /// <seealso ref="http://jqueryui.com/demos/slider/"/>
     /// <remarks>Visit the jQuery UI documentation site for complete documentation of options.</remarks>
     public class Slider : BaseWidget
     {

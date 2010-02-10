@@ -6,7 +6,10 @@
 		</Deprecated>
 		<Recognized>
 			<!-- Words that should not cause a violation. -->
-			
+
+			<!-- A valid shortening of Model View Controller -->
+			<Word>Mvc</Word>
+
 			<!-- A common shortening for Contributed -->
 			<Word>Contrib</Word>
 

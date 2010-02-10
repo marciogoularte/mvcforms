@@ -43,7 +43,7 @@ namespace MvcForms.Contrib.Widgets.JQueryUI
     /// <summary>
     /// Sortable collection control using jQuery UI Sortable widget
     /// </summary>
-    /// <see cref="http://jqueryui.com/demos/sortable/"/>
+    /// <seealso ref="http://jqueryui.com/demos/sortable/"/>
     /// <remarks>Visit the jQuery UI documentation site for complete documentation of options.</remarks>
     [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Naming", "CA1711:IdentifiersShouldNotHaveIncorrectSuffix",
         Justification="This class does wrap collections, hence this name is correct." )]
@@ -67,6 +67,9 @@ namespace MvcForms.Contrib.Widgets.JQueryUI
 
         #region .ctors
 
+        /// <summary>
+        /// Constructor.
+        /// </summary>
         public SortableCollection()
             : base()
         {
@@ -101,7 +104,7 @@ namespace MvcForms.Contrib.Widgets.JQueryUI
         /// </summary>
         /// <param name="output">Append output to this string builder.</param>
         /// <param name="name">Form name of the item being rendered.</param>
-        /// <param name="choice">Choice item being rendered.</param>
+        /// <param name="value">Choice item being rendered.</param>
         public override void RenderItemChoice(StringBuilder output, string name, object value)
         {
             var attributes = new ElementAttributesDictionary();
